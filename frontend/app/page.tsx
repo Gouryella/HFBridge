@@ -534,7 +534,7 @@ export default function Home() {
                 <div className="flex flex-col items-start gap-2">
                   <p>如果你觉得 HF Bridge 对你有帮助，欢迎点个 ⭐️ Star 支持一下！</p>
                   <div className="flex md:flex-row flex-col gap-6 min-w-0">
-                    <Link href="https://github.com/gouryella/hf-bridge" target="_blank" className="flex justify-center items-center mt-4 gap-2 rounded-4xl bg-gray-900/30 px-4 py-2 hover:bg-gray-900/50 transition">
+                    <Link href="https://github.com/Gouryella/HFBridge" target="_blank" className="flex justify-center items-center mt-4 gap-2 rounded-4xl bg-gray-900/30 px-4 py-2 hover:bg-gray-900/50 transition">
                       <GithubIcon size={32} className="text-white/80 hover:text-white" />
                       <p className="text-white/80 hover:text-white font-semibold">GitHub 仓库</p>
                     </Link>
