@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@config "../tailwind.config.js";
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow:
+      0 0 0 3px rgba(255, 255, 255, 0.06),
+      0 0 16px var(--heartbeat-color, rgba(255, 255, 255, 0.24));
+  }
+  25% {
+    transform: scale(1.12);
+    box-shadow:
+      0 0 0 3px rgba(255, 255, 255, 0.06),
+      0 0 26px var(--heartbeat-color, rgba(255, 255, 255, 0.28));
+  }
+  40% {
+    transform: scale(0.96);
+    box-shadow:
+      0 0 0 3px rgba(255, 255, 255, 0.06),
+      0 0 18px var(--heartbeat-color, rgba(255, 255, 255, 0.24));
+  }
+  60% {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 0 3px rgba(255, 255, 255, 0.06),
+      0 0 28px var(--heartbeat-color, rgba(255, 255, 255, 0.32));
+  }
+}
+
+.animate-heartbeat {
+  animation: heartbeat 1.8s ease-in-out infinite;
+  transform-origin: center;
+}

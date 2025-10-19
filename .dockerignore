@@ -1,0 +1,25 @@
+# Frontend
+frontend/node_modules
+frontend/.next
+frontend/out
+
+# Backend
+backend/hfbridge
+
+# Data
+data/
+*.db
+
+# Git
+.git
+.gitignore
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

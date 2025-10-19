@@ -1,0 +1,8 @@
+backend/hfbridge
+*.db
+backend/static/web/**
+!backend/static/web/.gitkeep
+backend/.cache
+backend/.gocache
+.DS_Store
+frontend/.vscode

@@ -1,0 +1,15 @@
+services:
+  hfbridge:
+    image: gouryella/hfbridge:latest
+    container_name: hfbridge
+    ports:
+      - "8080:8080"
+    environment:
+      - BIND_ADDR=:8080
+      - DEFAULT_UPSTREAM=https://huggingface.co
+      # PROXY_ORIGIN 默认为访问域名，可按需覆盖：
+      # - PROXY_ORIGIN=https://your-domain.com
+      - DB_PATH=/data/hfbridge.db
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
